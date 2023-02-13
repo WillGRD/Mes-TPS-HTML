@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="description" content="">
+</head>
+
+<body>
+    <h1>Gerardin&nbsp;William&nbsp;-&nbsp;Les formulaires</h1>
+    <h2>Mon premier formulaire</h2>
+    <form action="#" method="post">
+
+        <div>
+            <input type="radio" id="Masculin" name="Genre" value="homme">
+            <label for="Masculin">Homme</label>
+
+            <input type="radio" id="Femininbis" name="Genre" value="femme">
+            <label for="Femininbis">Femme</label>
+
+            <input type="radio" id="NonGenre" name="Genre" value="non renseignez">
+            <label for="NonGenre">Non Renseignez</label>
+        </div>
+
+        <div>
+            <label for="Name">Votre nom</label>
+            <input type="text" name="lastname" id="Name" placeholder="Votre Nom">
+        </div>
+
+        <div>
+            <label for="Prenom">Votre prénom</label>
+            <input type="text" name="firstname" id="Prenom" placeholder="Votre prénom">
+        </div>
+
+        <div>
+            <label for="age">Votre age</label>
+            <input type="number" name="Age" id="age" min="16" max="99">
+        </div>
+
+        <div>
+            <label for="email">Votre Email</label>
+            <input type="email" name="e-mail" id="email" placeholder="Votre e-mail">
+        </div>
+
+        <div>
+            <label for="msg">Votre Message</label>
+            <textarea name="message" id="msg"></textarea>
+        </div>
+
+        <div>
+            <input type="checkbox" name="coche" id="rgpd">
+            <label for="rgpd">Règlement (UE) 2016/679 du Parlement européen et du Conseil du 27 avril 2016,<br>
+                relatif à
+                la protection des personnes physiques à l'égard du traitement des données à caractère personnel et à la
+                libre circulation de ces données,<br> et abrogeant la directive 95/46/CE (règlement général sur la
+                protection des données)</label>
+
+        </div>
+        <input type="submit" value="Envoyer le Message">
+
+
+
+    </form>
+    <hr>
+    <h2>Ensemble de champs</h2>
+
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Mon second formulaire</legend>
+            <fieldset>
+                <legend>Identité</legend>
+                <div>
+
+                    <input type="radio" id="Masc" name="Genre" value="homme">
+                    <label for="Masc">Homme</label>
+
+                    <input type="radio" id="Girl" name="Genre" value="femme">
+                    <label for="Girl">Femme</label>
+
+                    <input type="radio" id="Nongenre" name="Genre" value="Non renseignez">
+                    <label for="Nongenre">Non Renseignez</label>
+                </div>
+
+                <div>
+                    <label for="Nom">Votre nom</label>
+                    <input type="text" name="lastname" id="Nom" placeholder="Votre Nom">
+                </div>
+
+                <div>
+                    <label for="prenom">Votre prénom</label>
+                    <input type="text" name="firstname" id="prenom" placeholder="Votre prénom">
+                </div>
+
+                <div>
+                    <label for="Agebis">Votre age</label>
+                    <input type="number" name="Age" id="Agebis" min="16" max="99">
+                </div>
+
+
+            </fieldset>
+            <fieldset>
+                <legend>Situation personnelle</legend>
+                <div>
+
+                    <input type="radio" id="Homme" name="Situation" value="celibataire">
+                    <label for="Homme">celibataire</label>
+                    <input type="radio" id="Feminin" name="marie" value="Marié">
+                    <label for="nongenre">Femme</label>
+                    <input type="radio" id="nongenre" name="veuf" value="Veuf">
+                    <label for="nongenre">Non Renseignez</label>
+                </div>
+
+
+                <div>
+                    <label for="Nom">Votre nom</label>
+                    <input type="text" name="lastname" id="non" placeholder="Union libre">
+                </div>
+
+                <div>
+                    <label for="prenombis">Votre prénom</label>
+                    <input type="text" name="firstname" id="prenombis" placeholder="Votre prénom">
+                </div>
+
+                <div>
+                    <label for="Age">Votre age</label>
+                    <input type="number" name="Age" id="Age" min="16" max="99">
+                </div>
+
+            </fieldset>
+            <fieldset>
+                <legend>Contact</legend>
+                <label for="telephone">Votre téléphone</label>
+                <input type="tel" name="phone" id="telephone">
+                <label for="email">Votre email</label>
+                <input type="email" name="emailbis" id="mail">
+                <div>
+                    <input type="checkbox" name="confirm" id="confirm" value="confirm">
+                    <label for="confirm">En cochant cette case, je confirme l'exactitude des informations
+                        renseignées.</label>
+                </div>
+                <div class="submit">
+                    <input type="submit" value="Transmettre mes coordonnées">
+                </div>
+            </fieldset>
+
+        </fieldset>
+    </form>
+
+
+
+
+</body>
+
+</html>
